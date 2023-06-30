@@ -1,0 +1,80 @@
+/*================================ RESET ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1E1E20;
+  font-family: sans-serif;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    background-color:  #44444442;
+  }
+    
+  ::-webkit-scrollbar-thumb {
+    background-color: #050607;
+    border-radius: 5px; 
+  }  
+
+/*================================ END ================================ */
+
+header {
+    position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  height: 60px;
+  background: #1e1e20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  border-bottom: 1px solid #44444442;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+
+ul li a {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #f2f2f2;
+    transition: all 0.5s;
+}
+  
