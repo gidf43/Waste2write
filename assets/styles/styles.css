@@ -65,6 +65,10 @@ header {
   border-bottom: 1px solid #44444442;
 }
 
+.logo h3 {
+  color: #f2f2f2;
+}
+
 nav ul {
     display: flex;
     align-items: center;
@@ -77,6 +81,10 @@ ul li a {
     color: #f2f2f2;
     transition: all 0.5s;
 }
+
+ul li a:hover {
+  color: #2CC887;
+}
   
 main {
   padding: 0px 50px;
@@ -88,6 +96,64 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.blur {
+  display: flex;
+  justify-content: center;
+  background-color: #2CC887;
+  filter: blur(70px);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 1%;
+  z-index: 9;
+  top: 5%;
+  animation: floating 5s infinite ease-in-out;
+}
+.blur2 {
+  display: flex;
+  justify-content: center;
+  background-color: #2CC887;
+  filter: blur(70px);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 30%;
+  top: 80%;
+  animation: floating 5s infinite ease-in-out;
+}
+.blur3 {
+  display: flex;
+  justify-content: center;
+  background-color: #2CC887;
+  filter: blur(10px);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 85%;
+  top: 59%;
+  animation: floating 9s infinite ease-in-out;
+}
+.blur4 {
+  display: flex;
+  justify-content: center;
+  background-color: #2CC887;
+  filter: blur(10px);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 8%;
+  top: 79%;
+  animation: floating 10s infinite ease-in-out;
 }
 
 .hero {
@@ -111,7 +177,7 @@ main {
 }
 
 .hero .icons img {
-  height: 70px;
+  height: 60px;
 }
 
 .hero h1 {
@@ -143,4 +209,16 @@ main {
 
 .hero button:hover {
   background-color: transparent;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
