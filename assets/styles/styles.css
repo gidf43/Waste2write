@@ -117,7 +117,7 @@ main {
   display: flex;
   justify-content: center;
   background-color: #2CC887;
-  filter: blur(70px);
+  filter: blur(50px);
   border-radius: 100%;
   transform: rotate(-20deg);
   position: absolute;
@@ -209,6 +209,125 @@ main {
 
 .hero button:hover {
   background-color: transparent;
+}
+
+
+
+#about {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.about {
+  width: 60%;
+}
+
+.about h2 {
+  font-size: 2.3rem;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+  word-spacing: 0.2rem;
+}
+
+.about p {
+  font-size: 1rem;
+  color: #f2f2f2;
+  line-height: 22px;
+  word-spacing: 0.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#about .blur {
+  display: flex;
+  justify-content: center;
+  background-color: #2CC887;
+  filter: blur(50px);
+  border-radius: 100%;
+  transform: rotate(-20deg);
+  position: absolute;
+  width: 90px;
+  height: 80px;
+  left: -3%;
+  top: 170%;
+}
+
+
+#services {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.services h2 {
+  font-size: 2.3rem;
+  color: #f2f2f2;
+  margin-bottom: 30px;
+  word-spacing: 0.2rem;
+}
+
+.services p {
+  font-size: 1rem;
+  color: #f2f2f2;
+  line-height: 22px;
+  word-spacing: 0.2rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.services .card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 2rem;
+  row-gap: 2rem;
+  margin-top: 40px;
+}
+
+.services .card-container .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 50px !important;
+  padding-bottom: 40px !important;
+  padding: 20px;
+  border: 1px solid #44444442;
+  border-radius: 10px;
+  height: 300px;
+  transition: all 0.9s;
+  cursor: pointer;
+}
+
+.services .card-container .card:hover {
+  border: 1px solid #2CC887;
+}
+
+.services .card-container .card span {
+  font-weight: bold;
+  font-size: 0.99rem;
+  color: #2CC887;
+  margin: 20px 0px;
+}
+
+.services .card-container .card p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  text-align: left;
+  color: #97979e;
+  text-align: center;
+}
+.services .card-container .card img {
+  height: 50px;
 }
 
 @keyframes floating {
