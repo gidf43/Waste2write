@@ -548,7 +548,7 @@ footer {
   display: flex;
   align-items: center;
   height: 100vh;
-  background: url("/assets/images/bg1.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/bg1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -562,18 +562,17 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
   mix-blend-mode: multiply;
 }
 
 @keyframes slideshow {
-  0% { background-image: url("/assets/images/bg1.jpg"); }
-  25% { background-image: url("/assets/images/bg2.jpg"); }
-  50% { background-image: url("/assets/images/bg3.jpg"); }
+  0% { background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/bg1.jpg"); }
+  25% { background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/bg2.jpg"); }
+  50% { background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/assets/images/bg3.jpg"); }
 }
 
 #hero2 {
-  animation: slideshow 10s infinite;
+  animation: slideshow 15s infinite;
 }
 
 
